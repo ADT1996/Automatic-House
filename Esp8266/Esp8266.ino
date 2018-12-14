@@ -1,11 +1,10 @@
-#include<ESP8266WiFi.h>
+#include<ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 #include <DHT.h>
 #include <SoftwareSerial.h>
 #include <Scheduler.h>
 //#include <SerialESP8266wifi.h>
 //#include<String.h>
-//#include <SoftwareSerial.h>
 #include <ESP8266HTTPClient.h>
 #include <NTPtimeESP.h>
 #define DEBUG_ON
@@ -19,12 +18,17 @@ strDateTime dateTime;
 const char* ssid1 = "BoSu";
 const char* password1 = "DSNW25121996";
 
-const char* ssid2 = "HANHCHINH";
-const char* password2 = "hutech@111111";
+const char* ssid2 = "ADT";
+const char* password2 = "Tuyen@ADT1996";
+
+const char* ssid3 = "HANHCHINH";
+const char* password3 = "hutech@111111";
 
 #define HOSTIFTTT "maker.ifttt.com"
 #define EVENTO "Smart_Home"
 #define IFTTTKEY "mBuHE6gVcIcYgCveyH96y8sgc3LfHmuh6vs5TpE8eKG"
+
+ESP8266WiFiMulti multiwifi;
 
 WiFiClientSecure client;
 //=====================Nhiet Do=============================
@@ -106,7 +110,7 @@ const int Led3 = 12;
 int a = 0;
 int b = 0;
 void DenSang() {
-  if (WiFi.status() == WL_CONNECTED) {
+  if (multiwifi.run() == WL_CONNECTED) {
     HTTPClient http;
     String url = "http://webdemo.somee.com/Home/getDens";
     http.begin(url);
@@ -235,8 +239,10 @@ void setup() {
   Serial.begin(115200);
   WiFi.persistent(false);
   WiFi.disconnect(true);
-  WiFi.begin(ssid2, password2);
-  while (WiFi.status() != WL_CONNECTED) {
+  multiwifi.addAP(ssid1, password1);
+  multiwifi.addAP(ssid2, password2);
+  multiwifi.addAP(ssid3, password3);
+  while (multiwifi.run() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }

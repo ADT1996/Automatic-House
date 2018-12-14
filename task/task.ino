@@ -5,11 +5,14 @@
 #include <HTTPClient.h>
 #define LED_BUILTIN 2
 
-const char* ssid1 = "ADT";
-const char* password1 = "Tuyen@ADT1996";
+const char* ssid1 = "BoSu";
+const char* password1 = "DSNW25121996";
 
-const char* ssid2 = "BoSu";
-const char* password2 = "DSNW25121996";
+const char* ssid2 = "ADT";
+const char* password2 = "Tuyen@ADT1996";
+
+const char* ssid3 = "HANHCHINH";
+const char* password3 = "hutech@111111";
 
 bool isMoCua = false;
 
@@ -44,6 +47,8 @@ Keypad myKeypad = Keypad( makeKeymap(keys), rowPins, colPins, n_rows, n_cols);
 
 TaskHandle_t Task1, Task2, Task3;
 
+WiFiMulti multiwifi;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -54,15 +59,17 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);
 
-  WiFi.begin(ssid2, password2);
-  while (WiFi.status() != WL_CONNECTED) {
+  multiwifi.addAP(ssid1, password1);
+  multiwifi.addAP(ssid2, password2);
+  multiwifi.addAP(ssid3, password3);
+  while (multiwifi.run() != WL_CONNECTED) {
     vTaskDelay(1000);
     Serial.print(".");
   }
   Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP Address");
-  Serial.println(WiFi.localIP());
+  Serial.println(WiFi.SSID());
 
   xTaskCreatePinnedToCore(
     Task_Controlbyweb, /* Task function. */
@@ -212,7 +219,7 @@ void loop() {
 void Task_Controlbyweb(void * parameter)
 {
   while (true) {
-    if ((WiFi.status() == WL_CONNECTED)) { //Check the current connection status
+    if ((multiwifi.run() == WL_CONNECTED)) { //Check the current connection status
 
       HTTPClient http;
 
