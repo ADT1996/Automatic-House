@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ControllAlarm";
+    Layout = null;
+}
+
+<h2>ControllAlarm</h2>
+<button id ="btnAuto"  onclick="API('Auto')" >Auto</button>
+<button id ="btnTurnOn" onclick="API('Turn On')" >On</button>
+<button id ="btnTurnOff"  onclick="API('Turn Off')" >Off</button>
+<script>
+    function API(value) {
+        var xhttp = new XMLHttpRequest();
+        //var Autohtml = document.getElementById('btnAuto').innerHTML;
+        //var TurnOnhtml = document.getElementById('btnTurnOn').innerHTML;
+        //var TunrOffhtml = document.getElementById('btnTurnOff').innerHTML;
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                if (this.responseText === "OK") {
+                    document.getElementById('btnAuto').innerHTML = 'Auto';
+                    document.getElementById('btnTurnOn').innerHTML = 'Turn On';
+                    document.getElementById('btnTurnOff').innerHTML = 'Turn Off';
+                    
+                }
+            }
+        }
+        xhttp.open("GET","./setAlarm?_alarm=" +value, true);
+        xhttp.send();
+    }
+</script>

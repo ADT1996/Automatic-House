@@ -1,0 +1,11 @@
+﻿@model String
+@{
+    ViewBag.Title = "DoiMatKhau";
+}
+
+<h2>Đổi mật khảu cửa ra vào</h2>
+<form method="post">
+    <input type="password" name="matKhau" maxlength="8" value="@Model" />
+    <input type="submit" value="Lưu" />
+</form>
+
