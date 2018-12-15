@@ -1,15 +1,6 @@
 #include "Header/ControlTheDoorOffline.h"
 
-char getKey() {
-  char key = '\0';
-  while (!key) { 				// Neu chua bam phim
-    key = myKeypad.getKey();
-  }
-  return key;
-}
-
 void Task_Keypad(void* parameter) {
-  Serial.println("@");
   while (true) {
     char key = myKeypad.getKey();
 
@@ -57,13 +48,13 @@ void Task_Keypad(void* parameter) {
       default: {
           if (i != 32) {
             Key_Buff[i] = key;
-            Serial.print(key);
-            writeLCD(key);
+            writeLCD('*');
+            Serial.println(key);
             i++;
           }
           break;
         }
     }
-    vTaskDelay(1000);
+    vTaskDelay(200);
   }
 }

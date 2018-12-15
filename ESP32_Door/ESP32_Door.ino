@@ -27,7 +27,7 @@ void setup() {
     "Task_Controlbyweb", /* String with name of task. */
     10000, /* Stack size in words. */
     NULL, /* Parameter passed as input of the task */
-    2, /* Priority of the task. */
+    1, /* Priority of the task. */
     &Task2, /* Task handle. */
     0); /* Core. */
 
@@ -40,7 +40,7 @@ void setup() {
     NULL,
     1,
     &Task3,
-    1);
+    0);
 }
 
 void loop() {
