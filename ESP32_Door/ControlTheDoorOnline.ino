@@ -1,10 +1,15 @@
 #include "Header/ControlTheDoorOnline.h"
 
 void beginWiFi() {
-
+  WiFi.persistent(false);
+  WiFi.disconnect(true);
+  Serial.println("Wifi starting..."); 
   multiwifi.addAP(ssid1, password1);
+  Serial.println("add SSID1");
   multiwifi.addAP(ssid2, password2);
+  Serial.println("add SSID2");
   multiwifi.addAP(ssid3, password3);
+  Serial.println("add SSID3");
 
   while (multiwifi.run() != WL_CONNECTED) {
     delay(1000);

@@ -21,7 +21,6 @@ void setup() {
     1); /* Core. */
     
   beginWiFi();
-  
   xTaskCreatePinnedToCore(
     Task_Controlbyweb, /* Task function. */
     "Task_Controlbyweb", /* String with name of task. */
