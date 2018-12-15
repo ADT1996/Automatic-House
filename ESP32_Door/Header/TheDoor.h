@@ -32,6 +32,7 @@ void clearLCD();
 void setCursorLCD(int,int);
 void writeLCD(const char*);
 void writeLCD(const char);
+void writeLCD(const int);
 void setDoor();
 void mocua();
 void dongcua();

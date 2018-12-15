@@ -142,3 +142,7 @@ void writeLCD(const char* text) {
 void writeLCD(const char chr) {
   lcd.print(chr);
 }
+
+void writeLCD(const int number) {
+  lcd.print(number);
+}

@@ -21,6 +21,9 @@ void Task_Keypad(void* parameter) {
 
           if (Door_Stt == 1 ) {
             count = 3;
+            clearLCD();
+            setCursorLCD(1,0);
+            writeLCD("Mo thanh cong");
             mocua();
             vTaskDelay(5000);
             if (!lock) dongcua();
@@ -29,9 +32,22 @@ void Task_Keypad(void* parameter) {
             count--;
             if (count == 0) {
               Serial.println("Count = 0");
+              clearLCD();
+              setCursorLCD(2,0);
+              writeLCD("Sai mat khau");
+              setCursorLCD(2,1);
+              writeLCD("Doi 15 giay");
+              vTaskDelay(15000);
+              count = 3;
             } else {
-              Serial.println("");
-              Serial.println("Sai " + count);
+              clearLCD();
+              setCursorLCD(2,0);
+              writeLCD("Sai mat khau");
+              setCursorLCD(1,1);
+              writeLCD("Con ");
+              writeLCD(count);
+              writeLCD(" lan nhap");
+              vTaskDelay(2000);
             }
           }
 
