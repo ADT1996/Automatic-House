@@ -1,32 +1,50 @@
 #include "Header/Utility.h"
 
 Time::Time() {
-  strDateTime time_t = NPT();
-  hour = time_t.hour;
-  min = time_t.minute;
-  sec = time_t.second;
+  Serial.println("Contructor Time()");
+  hour = dateTime.hour;
+  min = dateTime.minute;
+  sec = dateTime.second;
+  Serial.print(hour);
+  Serial.print("-");
+  Serial.print(min);
+  Serial.print("-");
+  Serial.println(sec);
 }
 
 Time::Time(byte Hour, byte Minute, byte Second) {
 	sec = Second;
   min = Minute;
   hour = Hour;
-
-  addSecond(0);
+  addSecond((byte)0);
 }
 
 void Time::addSecond(byte second) {
 	sec += second;
 	min += sec/60;
 	hour += min/60;
-	
 	sec%=60;
 	min%=60;
 	hour%=24;
 }
 
-long Time::getTimeNumber() {
-	long currentNumberTime = hour * 3600 + min * 60 + sec;
+void Time::addSecond(unsigned long long Millisecond) {
+  byte sec = Millisecond / 1000;
+  addSecond(sec);
+}
+
+void Time::SyncRealTime() {
+  unsigned long long m = millis();
+  unsigned long long Mseccond = (m > oldmillis ? m - oldmillis : m + 4294967296 - oldmillis);
+  if(Mseccond >= 1000) {
+    oldmillis = ((unsigned long long) (m/1000)) * 1000;
+    Mseccond = ((unsigned long long) (Mseccond/1000)) * 1000;
+    addSecond(Mseccond);
+  }
+}
+
+unsigned int Time::getTimeNumber() {
+	unsigned int currentNumberTime = hour * 3600 + min * 60 + sec;
 	return currentNumberTime;
 }
 
@@ -65,8 +83,8 @@ Time* Time::parseTime(String timeString) {
     sec = 0;
   }
   
-  Time* time_t = new Time(hour,min,sec);
-  time_t->addSecond(0);
+  Time* time_t = new Time(hour, min, sec);
+  time_t->addSecond((byte) 0);
   
   for(i = 0; i < count; i++) {
     delete []temp[i];
@@ -120,8 +138,9 @@ String* split(String str,char a,int& count) {
   return result;
 }
 
-strDateTime NPT() {
+void NPT() {
   NTPtime NTPch("ch.pool.ntp.org");   // Server NTP
-  strDateTime dateTime = NTPch.getNTPtime(7.0, 0);
-  return dateTime;
+  do {
+    dateTime = NTPch.getNTPtime(7.0, 0);
+  } while(!dateTime.valid);
 }

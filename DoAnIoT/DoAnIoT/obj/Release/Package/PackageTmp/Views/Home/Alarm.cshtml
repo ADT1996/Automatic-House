@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Alarm";
+}
+
+<h2>@ViewBag.Title</h2>
+<button id="btnAlarm" type="button">@ViewData["status"]</button>
+<script>
+    var btnAlarm = document.getElementById("btnAlarm");
+    btnAlarm.onclick = function () {
+        var xml = new XMLHttpRequest();
+        xml.onreadystatechange = function (data) {
+            if (this.readyState == 4 && this.status == 200) {
+                if (btnAlarm.textContent === "On") {
+                    btnAlarm.textContent = "Off";
+                } else {
+                    btnAlarm.textContent = "On";
+                }
+            }
+        }
+        xml.open("GET", "setAlarm")
+        xml.send();
+    }
+</script>

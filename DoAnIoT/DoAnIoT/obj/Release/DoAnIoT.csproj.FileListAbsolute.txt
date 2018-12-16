@@ -1,0 +1,167 @@
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\ApplicationInsights.config
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\csc.exe
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\System.Collections.Immutable.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\System.Reflection.Metadata.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\vbc.exe
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\VBCSCompiler.exe
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\roslyn\VBCSCompiler.exe.config
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\DoAnIoT.dll.config
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\DoAnIoT.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\DoAnIoT.pdb
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Antlr3.Runtime.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\EntityFramework.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\EntityFramework.SqlServer.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.DependencyCollector.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Web.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.WindowsServer.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.ApplicationInsights.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Google.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Web.Infrastructure.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Newtonsoft.Json.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Owin.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Helpers.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Mvc.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Optimization.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Razor.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Deployment.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Razor.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\WebGrease.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.DependencyCollector.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Web.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AI.WindowsServer.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.ApplicationInsights.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Helpers.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Mvc.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Optimization.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.Razor.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Deployment.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Razor.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Antlr3.Runtime.pdb
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Newtonsoft.Json.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\EntityFramework.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\EntityFramework.SqlServer.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Google.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.csprojResolveAssemblyReference.cache
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.dll
+E:\Thuong mai dien tu\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.pdb
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\ApplicationInsights.config
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\csc.exe
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\System.Collections.Immutable.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\System.Reflection.Metadata.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\vbc.exe
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\VBCSCompiler.exe
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\roslyn\VBCSCompiler.exe.config
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\DoAnIoT.dll.config
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\DoAnIoT.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\DoAnIoT.pdb
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Antlr3.Runtime.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\EntityFramework.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\EntityFramework.SqlServer.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.DependencyCollector.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Web.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.WindowsServer.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.ApplicationInsights.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Google.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Web.Infrastructure.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Newtonsoft.Json.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Owin.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Helpers.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Mvc.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Optimization.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Razor.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Deployment.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Razor.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\WebGrease.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.DependencyCollector.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.Web.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AI.WindowsServer.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.ApplicationInsights.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Newtonsoft.Json.pdb
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Newtonsoft.Json.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Helpers.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Mvc.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Optimization.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.Razor.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Deployment.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\System.Web.WebPages.Razor.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Antlr3.Runtime.pdb
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\EntityFramework.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\EntityFramework.SqlServer.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Google.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.csprojAssemblyReference.cache
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.csproj.CoreCompileInputs.cache
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.csproj.CopyComplete
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.dll
+E:\DACN\DACN2\DoAnIoT\DoAnIoT\obj\Release\DoAnIoT.pdb

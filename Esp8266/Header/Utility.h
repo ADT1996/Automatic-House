@@ -14,21 +14,25 @@
 //	Scheduler Scheduler;
 	
 	class Time {
-		private:
+		public:
 			byte hour;
 			byte min;
 			byte sec;
-		public:
 			Time();
 			Time(byte,byte,byte);
 			void addSecond(byte);
-			long getTimeNumber();
+			unsigned int getTimeNumber();
+//			void syncRealTime();
+			void addSecond(unsigned long long);
+			void SyncRealTime();
 			static Time* parseTime(String);
 	};
 	
 	Time* currentTime = NULL;
 	Time* timeWorkFrom = NULL;
 	Time* timeWorkTo = NULL;
+	
+	unsigned long long oldmillis = 0;
 	
 	strDateTime dateTime;
 	ESP8266WiFiMulti multiwifi;
@@ -47,6 +51,6 @@
 	void setupCurrentTime();
 	void beginWiFi();
 	String* split(String,char,int&);
-	strDateTime NPT();
-
+	void NPT();
+	
 #endif

@@ -1,0 +1,19 @@
+﻿.lnk {
+    color: blue;
+    font-size: large;
+    font-family: Tahoma;
+}
+
+.lnk:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.txt {
+    font-size: large;
+    font-weight: bold;
+}
+
+.tr-row{
+    height: 50px;
+}

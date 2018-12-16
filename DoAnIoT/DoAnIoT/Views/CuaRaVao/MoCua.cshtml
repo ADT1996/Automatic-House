@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Mở cửa";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p style="color: red;">
+    @ViewData["thongBao"]
+</p>
+<form method="post">
+    <input name="matKhau" type="password" max="8" value="@ViewData["matKhau"]" />
+    <input type="submit" value="Mở cửa" />
+</form>

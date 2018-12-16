@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Thay đổi thời gian làm việc còi báo động";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+    <input name="timeFrom" placeholder="Thời gian bắt đầu làm việc" type="time" value="@ViewData["timeFrom"]" />
+    <input name="timeTo" placeholder="Thời gian kết thúc làm việc" type="time" value="@ViewData["timeTo"]" />
+    <input type="submit" value="Cài đặt" />
+</form>

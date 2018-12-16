@@ -4,6 +4,7 @@
 	#include "Utility.h"
 	#include "Sensor.h"
 	#include "Den.h"
+	#include "Buzzer.h"
 	#include <Scheduler.h>
 
 
@@ -51,9 +52,13 @@
 			}
 	};
 
-	TaskNhietDo nhietdo_task;
-	TaskBaoDong baodong_task;
-	TaskChuyenDong chuyendong_task;
-	TaskDen den_task;
+	class TaskRealTime : public Task {
+		protected:
+			void loop () {
+				//delay(1000);
+				Serial.println("LOOP");
+				currentTime->SyncRealTime();
+			}
+	};
 
 #endif

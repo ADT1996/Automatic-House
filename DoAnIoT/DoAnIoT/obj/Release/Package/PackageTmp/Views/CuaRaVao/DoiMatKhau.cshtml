@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Đổi mật khẩu cửa ra vào";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+    <p class="txt" style="color: red">Mật khẩu chỉ chứa các ký từ 0-9 và A-D(bắt buộc viết in hoa)</p>
+    <p class="txt" style="font-size: medium">@ViewData["loi"]</p>
+    <input name="matKhau" type="password" max="8" value="@ViewData["matKhau"]" />
+    <input type="submit" value="Lưu" />
+</form>

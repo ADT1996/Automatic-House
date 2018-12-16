@@ -1,7 +1,7 @@
 #include "Header/Den.h"
 
 void BatDen() {
-  Serial.println("BatDen");
+//  Serial.println("BatDen");
   b = b + 1;
   a = a + digitalRead(Hongngoai);
 
@@ -13,7 +13,7 @@ void BatDen() {
       String s = "";
       http.end();
       digitalWrite(Leds[i], HIGH);
-      Serial.print(s + Leds[i] + " on\n");
+//      Serial.print(s + Leds[i] + " on\n");
     }
     String url = urlString + "status=true";
       http.begin(url);
@@ -24,19 +24,19 @@ void BatDen() {
 
 void DenSang() {
   if (multiwifi.run() == WL_CONNECTED) {
-    Serial.println("DenSang");
+//    Serial.println("DenSang");
     HTTPClient http;
     String url = host + "Home/getDens";
     bool flag = http.begin(url);
     if (flag) {
-      Serial.println("Flag on");
+//      Serial.println("Flag on");
       int httpCode = http.GET();
       //Serial.print("split");
       // String *a = split(http.getString(),'-');
       if (httpCode == 200) {
         String s = http.getString();
         int count;
-        Serial.println(s);
+//        Serial.println(s);
         String* result = split(s, '-', count);
         int min = nLeds < count ? nLeds : count;
         for (int i = 0; i < min; i++) {
@@ -48,10 +48,10 @@ void DenSang() {
         }
         delete []result;
         a = 0; b = 0;
-        Serial.print(a);  Serial.print(b);
+//        Serial.print(a);  Serial.print(b);
       }
     } else {
-      Serial.println("Flag off");
+//      Serial.println("Flag off");
     }
 
     http.end();
@@ -60,7 +60,7 @@ void DenSang() {
 }
 
 void setLed() {
-  Serial.println("SetLed");
+//  Serial.println("SetLed");
   pinMode(Hongngoai, INPUT);
   
   for(int i = 0; i < nLeds; i++) {

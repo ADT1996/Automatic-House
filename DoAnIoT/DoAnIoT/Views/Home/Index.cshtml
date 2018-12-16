@@ -1,0 +1,59 @@
+﻿@model System.Collections.Generic.Dictionary<String,Boolean>
+@{ 
+    int i = 0;
+}
+<hr />
+    <p class="txt">Nhiệt độ <span id="nhietdo" class="txt" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">@ViewData["nhietDo"]</span> độ C - Độ ẩm <span id="doam" class="txt" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">@ViewData["doAm"]</span>%</p>
+    <hr />
+<table width="100%">
+    <tr class="tr-row">
+        <td>
+            <a class="lnk" href="@Url.Action("DoiMatKhau","CuaRaVao")">Đổi mật khẩu cửa ra vào</a>
+        </td>
+        <td>
+            <a class="lnk" href="@Url.Action("MoCua","CuaRaVao")">Mở cửa từ xa</a>
+        </td>
+    </tr>
+    <tr class="tr-row">
+        <td>
+            <a class="lnk" href="@Url.Action("CaiDatThoiGianLamViec","Home")">Thay đổi thời gian làm việc còi báo động</a>
+        </td>
+        
+    </tr>
+</table>
+<hr />
+<table>
+    <tr class="tr-row">
+        <td>
+            <p class="txt">
+                Còi báo động
+                <span>
+                    <button class="btn" type="button" id="btnAlarm">@ViewData["status"]</button>
+                </span>
+            </p>
+        </td>
+    </tr>
+</table>
+<hr />
+<table width="100%">
+    
+    @while(i < Model.Count)
+    {
+        <tr class="tr-row">
+                <td>
+                    <p class="txt">@Model.ElementAt(i).Key <span><button class="den btn" type="button" data-index="@i" data-key="@Model.ElementAt(i).Key">@(Model.ElementAt(i).Value ? "On" : "Off")</button></span></p>
+                </td>
+                @while (++i % 4 != 0 && i < Model.Count)
+                {
+                    <td>
+                        <p class="txt">@Model.ElementAt(i).Key <span><button class="den btn" type="button" data-index="@i" data-key="@Model.ElementAt(i).Key">@(Model.ElementAt(i).Value ? "On" : "Off")</button></span></p>
+                    </td>
+                }
+        </tr>
+    }
+
+</table>
+<script src="~/Scripts/Alarm.js" type="text/javascript"></script>
+<script src="~/Scripts/Den.js" type="text/javascript"></script>
+<script src="~/Scripts/ButtonJS.js" type="text/javascript"></script>
+<script src="~/Scripts/EventSource_NhietDoDoAm.js" type="text/javascript"></script>

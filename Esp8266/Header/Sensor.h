@@ -2,6 +2,7 @@
 #define SENSOR_h
 
 	#include "Utility.h"
+	#include "Buzzer.h";
 	#include <DHT.h>
 	
 	const int DHTPIN = 2;
@@ -11,9 +12,8 @@
 	float t = -1.0f;    //Biến nhiệt độ
 
 	const int Chuyendong = 16;
-	const int Buzzer = 13;
+	
 
-	void setupPinBuzzer();
 	void ReadTimeWork();
 	void beginDHT();
 	void DocNhietDo();
