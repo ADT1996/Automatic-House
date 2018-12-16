@@ -32,7 +32,7 @@ long Time::getTimeNumber() {
 
 Time* Time::parseTime(String timeString) {
   int count, i = 0;
-  String* result = split(timeString,':',&count);
+  String* result = split(timeString,':',count);
   char* temp[count];
   byte hour;
   byte min;
@@ -77,34 +77,36 @@ Time* Time::parseTime(String timeString) {
 }
 
 void setupCurrentTime() {
+  Serial.println("setupCurrentTime");
   currentTime = new Time();
 }
 
 void beginWiFi() {
+    Serial.println("beginWiFi");
     WiFi.persistent(false);
     WiFi.disconnect(true);
     multiwifi.addAP(ssid1, password1);
     multiwifi.addAP(ssid2, password2);
     multiwifi.addAP(ssid3, password3);
     while (multiwifi.run() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
+      delay(500);
+      Serial.print(".");
   }
   Serial.println("WiFi connected");
 }
 
-String* split(String str,char a,int* count) {
+String* split(String str,char a,int& count) {
   int i;
   int index = 0;
-  *count = 1;
+  count = 1;
   String *result = NULL;
   
   for(i=0; i<str.length(); i++){
     if(str[i] == a)
-      *count++;
+      count++;
   }
   
-  result = new String[*count];
+  result = new String[count];
   result[index] = "";
   
   for(i=0; i<str.length();i++) {

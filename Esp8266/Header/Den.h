@@ -11,4 +11,5 @@
 
 	void setLed();
 	void BatDen();
+	void DenSang();
 #endif

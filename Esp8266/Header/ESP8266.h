@@ -3,7 +3,7 @@
 
 	#include "Utility.h"
 	#include "Sensor.h"
-	#include "DenOnline.h"
+	#include "Den.h"
 	#include <Scheduler.h>
 
 
@@ -18,6 +18,17 @@
 			}
 	};
 
+	class TaskDen : public Task {
+		protected:
+			void setup() {
+				setLed();
+			}
+
+			void loop () {
+				BatDen();
+			}
+	};
+	
 	class TaskBaoDong : public Task {
 		protected:
 			void setup() {
@@ -43,5 +54,6 @@
 	TaskNhietDo nhietdo_task;
 	TaskBaoDong baodong_task;
 	TaskChuyenDong chuyendong_task;
+	TaskDen den_task;
 
 #endif

@@ -46,7 +46,7 @@
 	
 	void setupCurrentTime();
 	void beginWiFi();
-	String* split(String,char,int*);
+	String* split(String,char,int&);
 	strDateTime NPT();
 
 #endif

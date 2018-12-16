@@ -8,9 +8,8 @@ void setup() {
   Scheduler.start(&nhietdo_task);
   Scheduler.start(&baodong_task);
   Scheduler.start(&chuyendong_task);
-  
+  Scheduler.start(&den_task);
+  Scheduler.begin();
 }
 
-void loop() {
-  BatDen();
-}
+void loop() {}
