@@ -29,5 +29,5 @@ void Alarm() {
     }
     http.end();
   }
-  delay(1000);
+//  delay(1000);/
 }

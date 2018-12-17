@@ -24,7 +24,7 @@ void DocNhietDo() {
     }
   }
   Serial.println();                //Xuống hàng
-  delay(1000);                     //Đợi 1 giây
+//  delay(1000);                     //Đợi 1 giây/
 }
 
 void ReadTimeWork() {
@@ -54,7 +54,7 @@ void ReadTimeWork() {
 
     delete []result;
 //    Serial.println(timeWork);
-    delay(1000);
+//    delay(1000);/
   }
 }
 
