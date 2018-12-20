@@ -23,7 +23,7 @@ void Alarm() {
         HTTPClient http1;
         url = host + "Home/setAlarm?status=false";
         http1.begin(url);
-        http1.GET();
+        Serial.println(http1.GET());
         http1.end();
       }
     }

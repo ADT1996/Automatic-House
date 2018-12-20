@@ -56,8 +56,15 @@
 		protected:
 			void loop () {
 				//delay(1000);
-				Serial.println("LOOP");
+				//Serial.println("LOOP");
 				currentTime->SyncRealTime();
+			}
+	};
+
+	class TaskAlarmOnline : public Task {
+		protected:
+			void loop() {
+				Alarm();
 			}
 	};
 

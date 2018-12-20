@@ -16,7 +16,8 @@ void setup() {
   Scheduler.start(new TaskBaoDong());
   Scheduler.start(new TaskDen());
   Scheduler.start(new TaskChuyenDong());
-  Scheduler.start(new TaskRealTime);
+  Scheduler.start(new TaskAlarmOnline());
+  Scheduler.start(new TaskRealTime());
   Scheduler.begin();
 }
 

@@ -12,8 +12,11 @@ void beginWiFi() {
   Serial.println("add SSID3");
 
   while (multiwifi.run() != WL_CONNECTED) {
-    delay(1000);
     Serial.print(".");
+    digitalWrite(LED_BUILTIN,LOW);
+    delay(250);
+    digitalWrite(LED_BUILTIN,HIGH);
+    delay(250);
   }
   Serial.println("");
   Serial.println("WiFi connected");
@@ -54,6 +57,7 @@ void Task_Controlbyweb(void* parameter) {
       if (httpCode == 200) { //Check for the returning code
         String res = http.getString();
         http.end(); //Free the resources
+        Serial.print("isMocua: ");
         Serial.println(res);
         if (res.compareTo("True") == 0) {
           mocua();
