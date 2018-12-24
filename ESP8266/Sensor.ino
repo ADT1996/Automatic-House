@@ -11,18 +11,18 @@ void DocNhietDo() {
   int temp = dht.readTemperature();        //Đọc nhiệt độ
 //  Serial.println(s + "Nhiet do: " + t + "\nDo am: " + h); //Xuat nhiet do va do am
 
-  if ( (20 <= hum && hum <= 80) || (0 <= temp && temp <= 50) ) {
+    Serial.println(hum);
+    Serial.println(temp);
     if (hum != h || temp != t) {
       t = temp; h = hum;
       String url = host + "Home/setNhietDoDoAm?";
-      url = url + "nhietdo=" + t + "&doam=" + h ;
+      url = url + "nhietdo=" + temp + "&doam=" + hum;
       HTTPClient http;
       http.begin(url);
       int httpCode = http.GET();
       http.end();
-//      Serial.println(httpCode);
+      Serial.println(httpCode);
     }
-  }
   Serial.println();                //Xuống hàng
 //  delay(1000);                     //Đợi 1 giây/
 }
@@ -66,22 +66,34 @@ void ChuyenDong() {
     unsigned int timeto = timeWorkTo->getTimeNumber();
     unsigned int currenttime = currentTime->getTimeNumber();
 
-//    Serial.println(timefrom);
-    Serial.print(currentTime->hour);
-    Serial.print(":");
-    Serial.print(currentTime->min);
-    Serial.print(":");
-    Serial.println(currentTime->sec);
-//    Serial.println(timeto);
+    
+//    Serial.print(currentTime->hour);
+//    Serial.print(":");
+//    Serial.print(currentTime->min);
+//    Serial.print(":");
+//    Serial.println(currentTime->sec);
+
     
     if (timefrom <= currenttime && currenttime <= timeto) {
+      Serial.print(timefrom);
+      Serial.print('-');
+      Serial.print(currenttime);
+      Serial.print('-');
+      Serial.println(timeto);
+//      unsigned long mill = millis();
+//      unsigned long timecur = millis();
+//      if(mill > timeold) {
+//        timecur = mill - timeold;
+//      } else {
+//        timecur = ;
+//      }
       if (digitalRead(Chuyendong) == 1) {
-        digitalWrite(Buzzer, LOW);
-//        Serial.println("Buzzer on");
+        digitalWrite(Buzzer, HIGH);
+        Serial.println("Buzzer on");
       }
       else {
-//        Serial.println("Buzzer off");
-        digitalWrite(Buzzer, HIGH);
+        Serial.println("Buzzer off");
+        digitalWrite(Buzzer, LOW);
       }
     }
   }

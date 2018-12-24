@@ -26,7 +26,8 @@ void Task_Keypad(void* parameter) {
             writeLCD("Mo thanh cong");
             mocua();
             vTaskDelay(5000);
-            if (!lock) dongcua();
+//            if (!lock) /
+            dongcua();
             Door_Stt = 0;
           } else {
             count--;

@@ -14,11 +14,15 @@ void Alarm() {
     int httpCode = http.GET();
     if (httpCode == 200) {
       String mess = http.getString();
-      if (mess.compareTo("On") == 0) {
-        digitalWrite(Buzzer, LOW);
+      int can = mess.compareTo("On");
+      Serial.print(mess);
+      Serial.print(' ');
+      Serial.println(can);
+      if (can == 0) {
+        digitalWrite(Buzzer, HIGH);
         buzzerIsOn = true;
         delay(3000);
-        digitalWrite(Buzzer, HIGH);
+        digitalWrite(Buzzer, LOW);
         buzzerIsOn = false;
         HTTPClient http1;
         url = host + "Home/setAlarm?status=false";
